@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etnodim</title>
+        <meta name="Etnodim Каталог" content="Etnodim Каталог"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="fonts.css">
+    </head>
+    <body>
+        <header>
+            <div class="wraper wraper-header">
+                <div>
+                    <!--Burger Menu Pop-up-->
+                    <div class="burger-menu hide-desktop">
+                        <button><svg width="20" height="9" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="1" fill="black"/>
+                            <rect y="4" width="20" height="1" fill="black"/>
+                            <rect y="8" width="10" height="1" fill="black"/>
+                            </svg>
+                        </button>
+                        <div class="brgr-m-pop-up">
+                            <ul class="nav-mobile">
+                                <li class="page-heading"><a>Каталог</a>
+                                </li>
+                                <li class="page-heading"><a>Знижки</a></li>
+                                <li class="page-heading"><a>Блог</a></li>
+                                <li class="page-heading"><a>Про нас</a></li>
+                            </ul>
+                            <div class="lang-link">
+                                <div class="lang-divider"></div>
+                                <ul>
+                                    <li class="lang-link-active"><a>UA</a></li>
+                                    <li><a>RU</a></li>
+                                    <li><a>EN</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="lang-link-active"></li><a><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.4633 12.0933H8.71667C9.34138 11.8094 10.0182 11.5958 10.717 11.3779C11.9814 10.984 13.2826 10.5757 14.3411 9.686H17.4633C17.7165 9.686 17.9216 9.48083 17.9216 9.22767C17.9216 8.97451 17.7165 8.76934 17.4633 8.76934H15.1646C15.7073 7.91932 15.8413 6.87679 15.5129 5.81273C15.0273 4.23936 13.6387 2.92416 12.1359 2.61442C10.7407 2.32653 9.18501 2.64092 7.97651 3.45482C6.91948 4.16667 6.21891 5.2015 6.00353 6.36917C5.9577 6.61803 6.12223 6.85723 6.37127 6.90306C6.61978 6.94746 6.85915 6.78454 6.90516 6.53532C7.07524 5.61221 7.6376 4.78828 8.48856 4.21537C9.49689 3.5361 10.7901 3.27184 11.9511 3.51247C13.141 3.75739 14.2457 4.81478 14.637 6.08307C14.8139 6.65599 14.9768 7.75492 14.0827 8.67874C14.0513 8.71124 14.0164 8.73809 13.9842 8.76934H4.53597C4.28281 8.76934 4.07764 8.97451 4.07764 9.22767C4.07764 9.48083 4.28281 9.686 4.53597 9.686H12.6532C11.9726 10.0218 11.222 10.2603 10.4444 10.5028C9.22975 10.8815 7.97969 11.2736 6.93998 12.0933H4.53597C4.28281 12.0933 4.07764 12.2985 4.07764 12.5517C4.07764 12.8048 4.28281 13.01 4.53597 13.01H6.07403C5.34472 14.1398 5.32463 15.7014 6.08481 17.0505C7.06862 18.7961 8.97912 19.4875 10.8125 19.4875C11.4498 19.4875 12.0779 19.4041 12.6544 19.2523C15.0692 18.616 16.5667 16.9248 16.5627 14.839C16.5624 14.5859 16.3572 14.3814 16.1044 14.3814C16.1041 14.3814 16.1037 14.3814 16.1037 14.3814C15.8505 14.3818 15.6457 14.5877 15.6461 14.8405C15.65 16.8124 13.9825 17.9543 12.4209 18.3657C10.4551 18.8831 7.92191 18.4434 6.88332 16.6007C6.3147 15.5913 6.16592 14.0624 7.1832 13.0913C7.21366 13.0622 7.24703 13.038 7.27811 13.01H17.4633C17.7165 13.01 17.9216 12.8048 17.9216 12.5517C17.9216 12.2985 17.7165 12.0933 17.4633 12.0933Z" fill="#1D1C1A" stroke="black" stroke-width="0.7"/>
+                                        </svg>
+                                        </a>
+                                    </li>
+                                    <li><a><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.0625 10.4844H11.5156V4.64062H12.375C13.1497 4.64149 13.8924 4.94961 14.4401 5.49738C14.9879 6.04515 15.296 6.78784 15.2969 7.5625C15.2969 7.69925 15.3512 7.8304 15.4479 7.9271C15.5446 8.0238 15.6757 8.07812 15.8125 8.07812C15.9493 8.07812 16.0804 8.0238 16.1771 7.9271C16.2738 7.8304 16.3281 7.69925 16.3281 7.5625C16.3269 6.51443 15.9101 5.50962 15.169 4.76852C14.4279 4.02743 13.4231 3.61056 12.375 3.60938H11.5156V2.0625C11.5156 1.92575 11.4613 1.7946 11.3646 1.6979C11.2679 1.6012 11.1368 1.54688 11 1.54688C10.8632 1.54688 10.7321 1.6012 10.6354 1.6979C10.5387 1.7946 10.4844 1.92575 10.4844 2.0625V3.60938H9.28125C8.23282 3.60938 7.22732 4.02586 6.48597 4.76722C5.74461 5.50857 5.32812 6.51407 5.32812 7.5625C5.32812 8.61093 5.74461 9.61643 6.48597 10.3578C7.22732 11.0991 8.23282 11.5156 9.28125 11.5156H10.4844V17.3594H8.9375C8.16284 17.3585 7.42015 17.0504 6.87238 16.5026C6.32461 15.9549 6.01649 15.2122 6.01562 14.4375C6.01562 14.3007 5.9613 14.1696 5.8646 14.0729C5.7679 13.9762 5.63675 13.9219 5.5 13.9219C5.36325 13.9219 5.2321 13.9762 5.1354 14.0729C5.0387 14.1696 4.98438 14.3007 4.98438 14.4375C4.98556 15.4856 5.40243 16.4904 6.14352 17.2315C6.88462 17.9726 7.88943 18.3894 8.9375 18.3906H10.4844V19.9375C10.4844 20.0743 10.5387 20.2054 10.6354 20.3021C10.7321 20.3988 10.8632 20.4531 11 20.4531C11.1368 20.4531 11.2679 20.3988 11.3646 20.3021C11.4613 20.2054 11.5156 20.0743 11.5156 19.9375V18.3906H13.0625C14.1109 18.3906 15.1164 17.9741 15.8578 17.2328C16.5991 16.4914 17.0156 15.4859 17.0156 14.4375C17.0156 13.3891 16.5991 12.3836 15.8578 11.6422C15.1164 10.9009 14.1109 10.4844 13.0625 10.4844ZM9.28125 10.4844C8.50632 10.4844 7.76313 10.1765 7.21517 9.62858C6.66721 9.08062 6.35938 8.33743 6.35938 7.5625C6.35938 6.78757 6.66721 6.04438 7.21517 5.49642C7.76313 4.94846 8.50632 4.64062 9.28125 4.64062H10.4844V10.4844H9.28125ZM13.0625 17.3594H11.5156V11.5156H13.0625C13.8374 11.5156 14.5806 11.8235 15.1286 12.3714C15.6765 12.9194 15.9844 13.6626 15.9844 14.4375C15.9844 15.2124 15.6765 15.9556 15.1286 16.5036C14.5806 17.0515 13.8374 17.3594 13.0625 17.3594Z" fill="black"/>
+                                        </svg>
+                                        </a>
+                                    </li>
+                                    <li><a><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.2383 17.4107C19.1958 17.3424 19.1403 17.2831 19.075 17.2363C19.0096 17.1895 18.9356 17.156 18.8572 17.1379C18.7789 17.1197 18.6977 17.1172 18.6184 17.1304C18.5391 17.1437 18.4631 17.1725 18.395 17.2152C17.4644 17.7945 16.4157 18.1579 15.3262 18.2786C14.2367 18.3992 13.1339 18.2741 12.0991 17.9123C11.0644 17.5506 10.1238 16.9615 9.34674 16.1883C8.56966 15.4151 7.9758 14.4776 7.60884 13.4446H14.765C14.927 13.4446 15.0825 13.3802 15.1971 13.2656C15.3117 13.151 15.3761 12.9956 15.3761 12.8335C15.3761 12.6714 15.3117 12.516 15.1971 12.4014C15.0825 12.2868 14.927 12.2224 14.765 12.2224H7.29107C7.14385 11.4142 7.14385 10.5861 7.29107 9.77795H14.765C14.927 9.77795 15.0825 9.71356 15.1971 9.59896C15.3117 9.48435 15.3761 9.32891 15.3761 9.16684C15.3761 9.00476 15.3117 8.84932 15.1971 8.73471C15.0825 8.62011 14.927 8.55572 14.765 8.55572H7.60884C7.97464 7.52478 8.56645 6.58874 9.34091 5.81617C10.1154 5.0436 11.0529 4.45408 12.0847 4.0908C13.1165 3.72752 14.2165 3.59969 15.3042 3.71666C16.3918 3.83364 17.4395 4.19246 18.3705 4.76684C18.5083 4.85274 18.6745 4.88039 18.8327 4.84372C18.9908 4.80704 19.1279 4.70905 19.2138 4.57128C19.2997 4.43352 19.3274 4.26727 19.2907 4.10911C19.2541 3.95096 19.1561 3.81385 19.0183 3.72795C17.901 3.03678 16.6396 2.61219 15.3318 2.48711C14.024 2.36203 12.705 2.53981 11.4769 3.00667C10.2489 3.47353 9.14491 4.21692 8.2505 5.17923C7.3561 6.14153 6.69532 7.29689 6.3194 8.55572H2.16385C2.00177 8.55572 1.84633 8.62011 1.73172 8.73471C1.61712 8.84932 1.55273 9.00476 1.55273 9.16684C1.55273 9.32891 1.61712 9.48435 1.73172 9.59896C1.84633 9.71356 2.00177 9.77795 2.16385 9.77795H6.05662C5.99484 10.1825 5.96216 10.5909 5.95885 11.0002C5.96216 11.4094 5.99484 11.8178 6.05662 12.2224H2.16385C2.00177 12.2224 1.84633 12.2868 1.73172 12.4014C1.61712 12.516 1.55273 12.6714 1.55273 12.8335C1.55273 12.9956 1.61712 13.151 1.73172 13.2656C1.84633 13.3802 2.00177 13.4446 2.16385 13.4446H6.3194C6.69611 14.7064 7.35901 15.8642 8.25647 16.8279C9.15392 17.7916 10.2617 18.535 11.4936 19.0005C12.7254 19.4659 14.0481 19.6407 15.3585 19.5112C16.669 19.3817 17.9319 18.9515 19.0488 18.2541C19.1167 18.2111 19.1754 18.1553 19.2216 18.0896C19.2678 18.024 19.3007 17.9499 19.3183 17.8716C19.3358 17.7933 19.3378 17.7123 19.3241 17.6332C19.3104 17.5541 19.2812 17.4785 19.2383 17.4107Z" fill="black"/>
+                                        </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="nav__wraper hide-mobile">
+                            <li class="nav__item">
+                                <a>Каталог</a>
+                                <!--Pop-up Menu-->
+                                <div class="wraper wraper-pop-up-menu" id="popup1">
+                                    <div>
+                                        <ul>
+                                            <li class="categories-heading"><a>жінкам</a></li>
+                                            <li class="categories-heading"><a>чоловікам</a></li>
+                                            <li class="categories-heading"><a>дітям</a></li>
+                                            <li class="categories-heading"><a>аксесуари</a></li>
+                                            <li class="categories-heading"><a>дім</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li class="categories-item"><a>Вишиті сукні</a></li>
+                                            <li class="categories-item"><a>Жіночі вишиванки</a></li>
+                                            <li class="categories-item"><a>Конструктор вишиванки</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li class="categories-item"><a>Світшоти та светри</a></li>
+                                            <li class="categories-item"><a>Футболки</a></li>
+                                            <li class="categories-item"><a>Брюки та комбінезони</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li class="categories-item"><a>Пальта та куртки</a></li>
+                                            <li class="categories-item"><a>Спідниці</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="img/image 40.jpg" width="197" height="242">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav__item"><a>Знижки</a></li>
+                            <li class="nav__item"><a>Блог</a></li>
+                            <li class="nav__item"><a>Про нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-logo">
+                    <a>
+                        <img src="img/etnodim-logo-main-removebg-preview 1.png" width="184" height="48">
+                    </a>
+                </div>
+                <div class="header__actions">
+                    <div class="hide-mobile header__custom-button">
+                        <a>UA<svg class="icon-arrow-down" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="black"/>
+                            </svg>
+                        </a>
+                        <a><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.4633 10.0933H4.71667C5.34138 9.8094 6.01822 9.59576 6.71702 9.3779C7.98138 8.98397 9.28262 8.57575 10.3411 7.686H13.4633C13.7165 7.686 13.9216 7.48083 13.9216 7.22767C13.9216 6.97451 13.7165 6.76934 13.4633 6.76934H11.1646C11.7073 5.91932 11.8413 4.87679 11.5129 3.81273C11.0273 2.23936 9.63872 0.924156 8.13589 0.614423C6.74066 0.326532 5.18501 0.64092 3.97651 1.45482C2.91948 2.16667 2.21891 3.2015 2.00353 4.36917C1.9577 4.61803 2.12223 4.85723 2.37127 4.90306C2.61978 4.94746 2.85915 4.78454 2.90516 4.53532C3.07524 3.61221 3.6376 2.78828 4.48856 2.21537C5.49689 1.5361 6.79007 1.27184 7.95112 1.51247C9.141 1.75739 10.2457 2.81478 10.637 4.08307C10.8139 4.65599 10.9768 5.75492 10.0827 6.67874C10.0513 6.71124 10.0164 6.73809 9.98424 6.76934H0.53597C0.282813 6.76934 0.0776367 6.97451 0.0776367 7.22767C0.0776367 7.48083 0.282813 7.686 0.53597 7.686H8.65317C7.97256 8.02176 7.22197 8.26031 6.44435 8.50277C5.22975 8.88145 3.97969 9.27359 2.93998 10.0933H0.53597C0.282813 10.0933 0.0776367 10.2985 0.0776367 10.5517C0.0776367 10.8048 0.282813 11.01 0.53597 11.01H2.07403C1.34472 12.1398 1.32463 13.7014 2.08481 15.0505C3.06862 16.7961 4.97912 17.4875 6.81245 17.4875C7.44982 17.4875 8.07788 17.4041 8.65438 17.2523C11.0692 16.616 12.5667 14.9248 12.5627 12.839C12.5624 12.5859 12.3572 12.3814 12.1044 12.3814C12.1041 12.3814 12.1037 12.3814 12.1037 12.3814C11.8505 12.3818 11.6457 12.5877 11.6461 12.8405C11.65 14.8124 9.98247 15.9543 8.42091 16.3657C6.45509 16.8831 3.92191 16.4434 2.88332 14.6007C2.3147 13.5913 2.16592 12.0624 3.1832 11.0913C3.21366 11.0622 3.24703 11.038 3.27811 11.01H13.4633C13.7165 11.01 13.9216 10.8048 13.9216 10.5517C13.9216 10.2985 13.7165 10.0933 13.4633 10.0933Z" fill="#1D1C1A"/>
+                            </svg>
+                            <svg class="icon-arrow-down" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="black"/>
+                            </svg>
+                        </a>
+                        <a class="phone-number" href="tel:+38(097)888-92-92">+38 097 888 92 92</a>
+                    </div>
+                    
+                    <div class="header__action-button">
+                        <a><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 20C6.79231 20 3 16.2077 3 11.5C3 6.79231 6.79231 3 11.5 3C16.2077 3 20 6.79231 20 11.5C20 16.2077 16.2077 20 11.5 20ZM11.5 4.30769C7.51154 4.30769 4.30769 7.51154 4.30769 11.5C4.30769 15.4885 7.51154 18.6923 11.5 18.6923C15.4885 18.6923 18.6923 15.4885 18.6923 11.5C18.6923 7.51154 15.4885 4.30769 11.5 4.30769Z" fill="black"/>
+                            <path d="M16.9523 16L23 22.0477L22.0477 23L16 16.9523L16.9523 16Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <a class="icon-bin" href="index-cart.html">
+                            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.25 6.80801C6.25 -0.935999 13.75 -0.936006 13.75 6.80801M2 23H18C18.5523 23 19 22.5523 19 22V7.80801C19 7.25572 18.5523 6.80801 18 6.80801H2C1.44772 6.80801 1 7.25572 1 7.80801V22C1 22.5523 1.44772 23 2 23Z" stroke="black"/>
+                            </svg>
+                            <span class="icon-counter">1</span>      
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </header>
+        <!--Breadcrumbs-->
+        <div class="wraper hide-mobile">
+            <ol class="nav-scheme">
+                <li class="nav-scheme__item scheme-level"><a>Головна</a></li>
+                <li class="nav-scheme__item scheme-level"><a>Жінкам</a></li>
+                <li class="nav-scheme__item"><a>Жіночі вишиванки</a></li>
+            </ol>
+        </div>
+        <section>
+            <div class="wraper wraper-catalogue">
+                <!--Checkbox-->
+                <aside class="hide-mobile">
+                    <ul class="wraper-filter">
+                        <li>
+                            <input type="checkbox" id="filter" class="active-checkbox">
+                            <label class="filter-heading" for="filter">Розмір
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </label>
+                            <div class="wraper-checkbox">
+                                <label><input type="checkbox" name="filter">32 | XXS (53)</label>
+                                <label><input type="checkbox" name="filter">34 | XS (60)</label>
+                                <label><input type="checkbox" name="filter">36 | S (60)</label>
+                                <label><input type="checkbox" name="filter">38 | M (60)</label>
+                                <label><input type="checkbox" name="filter">40 | L (60)</label>
+                                <label><input type="checkbox" name="filter">42 | XL (58)</label>
+                                <label><input type="checkbox" name="filter">46 | XXL (13)</label>
+                                <label><input type="checkbox" name="filter">48 | XХXL (4)</label>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter1" class="active-checkbox">
+                            <label class="filter-heading" for="filter1">Колір
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </label>
+                            <div class="wraper-checkbox">
+                                <label><input type="checkbox" name="filter">білий</label>
+                                <label><input type="checkbox" name="filter">чорний</label>
+                                <label><input type="checkbox" name="filter">бежевий</label>
+                                <label><input type="checkbox" name="filter">зелений</label>
+                                <label><input type="checkbox" name="filter">синій</label>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter2" class="active-checkbox">
+                            <label class="filter-heading" for="filter2">Сезон
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </label>
+                            <div class="wraper-checkbox">
+                                <label><input type="checkbox" name="filter">Easy collection (3)</label>
+                                <label><input type="checkbox" name="filter">Усі сезони (46)</label>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter3" class="active-checkbox">
+                            <label class="filter-heading" for="filter3">Тканина
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </label>
+                            <div class="wraper-checkbox">
+                                <label><input type="checkbox" name="filter">Льон (60)</label>
+                                <label><input type="checkbox" name="filter">Сатин (1)</label>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="filter4" class="active-checkbox">
+                            <label class="filter-heading" for="filter4">Рукав
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </label>
+                            <div class="wraper-checkbox">
+                                <label><input type="checkbox" name="filter">Довгий рукав (49)</label>
+                                <label><input type="checkbox" name="filter">3/4 рукав (11)</label>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+                <!--Catalogue-->
+                <div class="catalogue">
+                    <!--Catalogue Header-->
+                    <header class="catalogue-header">
+                        <div class="sort-filter hide-mobile">
+                            <button class="button-layout">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="6" height="6" fill="#565656"/>
+                                <rect y="8" width="6" height="6" fill="#565656"/>
+                                <rect x="8" y="8" width="6" height="6" fill="#565656"/>
+                                <rect x="8" width="6" height="6" fill="#565656"/>
+                                </svg>
+                            </button>
+                            <button class="button-layout">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="4" height="4" fill="#C4C4C4"/>
+                                    <rect y="5" width="4" height="4" fill="#C4C4C4"/>
+                                    <rect y="10" width="4" height="4" fill="#C4C4C4"/>
+                                    <rect x="10" width="4" height="4" fill="#C4C4C4"/>
+                                    <rect x="10" y="5" width="4" height="4" fill="#C4C4C4"/>
+                                    <rect x="10" y="10" width="4" height="4" fill="#C4C4C4"/>
+                                    <rect x="5" width="4" height="4" fill="#C4C4C4"/>
+                                    <rect x="5" y="5" width="4" height="4" fill="#C4C4C4"/>
+                                    <rect x="5" y="10" width="4" height="4" fill="#C4C4C4"/>
+                                </svg>      
+                            </button>
+                            <p>Сортувати за:
+                                <a class="sort-button">новинки
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="black"/>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="page-heading">Жіночі вишиванки</h1>
+                        </div>
+                    </header>
+                    <!--Catalogue Header Mobile-->
+                    <div class="hide-desktop checkbox-mobile">
+                        <div>
+                            <input type="checkbox" id="filter5" class="active-checkbox">
+                            <label for="filter5">Фільтри
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </label>
+                            <div class="wraper-checkbox-mobile">
+                                <label class="filter-heading-mobile" for="filter">Розмір</label>
+                                <label><input type="checkbox" name="filter">32 | XXS (53)</label>
+                                <label><input type="checkbox" name="filter">34 | XS (60)</label>
+                                <label><input type="checkbox" name="filter">36 | S (60)</label>
+                                <label><input type="checkbox" name="filter">38 | M (60)</label>
+                                <label><input type="checkbox" name="filter">40 | L (60)</label>
+                                <label><input type="checkbox" name="filter">42 | XL (58)</label>
+                                <label><input type="checkbox" name="filter">46 | XXL (13)</label>
+                                <label><input type="checkbox" name="filter">48 | XХXL (4)</label>
+                                    
+                                <label class="filter-heading-mobile" for="filter">Колір</label>
+                                <label><input type="checkbox" name="filter">білий</label>
+                                <label><input type="checkbox" name="filter">чорний</label>
+                                <label><input type="checkbox" name="filter">бежевий</label>
+                                <label><input type="checkbox" name="filter">зелений</label>
+                                <label><input type="checkbox" name="filter">синій</label>
+                                    
+                                <label class="filter-heading-mobile" for="filter">Сезон</label>
+                                <label><input type="checkbox" name="filter">Easy collection (3)</label>
+                                <label><input type="checkbox" name="filter">Усі сезони (46)</label>
+
+                                <label class="filter-heading-mobile" for="filter">Тканина</label>
+                                <label><input type="checkbox" name="filter">Льон (60)</label>
+                                <label><input type="checkbox" name="filter">Сатин (1)</label>
+
+                                <label class="filter-heading-mobile" for="filter">Рукав</label>
+                                <label><input type="checkbox" name="filter">Довгий рукав (49)</label>
+                                <label><input type="checkbox" name="filter">3/4 рукав (11)</label>
+                            </div>
+                        </div>
+                        <div>
+                            Сортувати за:
+                            <a class="sort-button">новинки
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Catalogue Items-->
+                    <div class="flex-container">
+                        <div class="flex__item">
+                            <figure>
+                                <a class="item-picture"><img src="img/image 1.jpg" width="500" height="500"></a>
+                                <figcaption>
+                                    <a class="item-caption">
+                                        Вишиванка з рослинним орнаментом Lito
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <div class="item-price">
+                                <a>
+                                    <span>2 800</span>
+                                    <span class="item-price-currency"> грн.</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex__item">
+                            <figure>
+                                <a class="item-picture"><img src="img/image 47.jpg" width="500" height="500"></a>
+                                <figcaption>
+                                    <a class="item-caption">
+                                        Вишиванка блакитного кольору з рослинним орнаментом Fialka
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <div class="item-price">
+                                <a>
+                                    <span>3 400</span>
+                                    <span class="item-price-currency"> грн.</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex__item">
+                            <figure>
+                                <a class="item-picture"><img src="img/image 7.jpg" width="500" height="500"></a>
+                                <figcaption>
+                                    <a class="item-caption">
+                                        Лляна вишиванка з геометричним орнаментом Nezalezhni
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <div class="item-price">
+                                <a>
+                                    <span>4 200</span>
+                                    <span class="item-price-currency"> грн.</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex__item">
+                            <figure>
+                                <a class="item-picture"><img src="img/image 8.jpg" width="500" height="500"></a>
+                                <figcaption>
+                                    <a class="item-caption">
+                                        Вишиванка з рослинним орнаментом Kashtan
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <div class="item-price">
+                                <a>
+                                    <span>3 800</span>
+                                    <span class="item-price-currency"> грн.</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex__item">
+                            <figure>
+                                <a class="item-picture"><img src="img/image 9.jpg" width="500" height="500"></a>
+                                <figcaption>
+                                    <a class="item-caption">
+                                        Легка блузка вільного крою з орнаментом Indi
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <div class="item-price">
+                                <a>
+                                    <span>3 800</span>
+                                    <span class="item-price-currency"> грн.</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex__item">
+                            <figure>
+                                <a class="item-picture"><img src="img/image 10.jpg" width="500" height="500"></a>
+                                <figcaption>
+                                    <a class="item-caption">
+                                        Біла вишиванка вільного крою Svitanok
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <div class="item-price">
+                                <a>
+                                    <span>2 980</span>
+                                    <span class="item-price-currency"> грн.</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="catalogue-footer">
+                        <button class="button-show-more">Показати більше
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.33799 7.25579H15.0312V0.5625H13.9062V5.26946L12.9874 4.35059C10.1911 1.55429 5.64112 1.55426 2.84479 4.35059C0.0484633 7.14691 0.0484985 11.6968 2.84479 14.4932C4.19084 15.8362 6.01464 16.5904 7.91608 16.5904C9.81752 16.5904 11.6413 15.8362 12.9874 14.4932L12.1919 13.6977C9.83421 16.0554 5.99799 16.0554 3.64034 13.6977C1.28269 11.34 1.28266 7.50375 3.64034 5.14607C5.99803 2.78838 9.83424 2.78838 12.1919 5.14607L13.1767 6.13079H8.33799V7.25579Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <div class="pages hide-mobile">
+                            <ul>
+                                <li class="nav__item current-page"><a>1</a></li>
+                                <li class="nav__item"><a>2</a></li>
+                                <li class="nav__item"><a>3</a></li>
+                                <li class="nav__item"><a>...</a></li>
+                                <li class="nav__item"><a>6</a></li>
+                                <li class="nav__item"><a>Наступна</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class="wraper footer-main">
+            <div class="button-up">
+                <a href="#top">
+                    <svg width="32" height="58" viewBox="0 0 32 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5 57.5V1M16.5 1L31 15.5M16.5 1L1 15.5" stroke="#DA1F39"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-logo">
+                <a>
+                    <img src="img/etnodim-logo-main-removebg-preview 1.png" width="184" height="48">
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <div class="nav-column">
+                    <ul>
+                        <li><a>Про нас</a></li>
+                        <li><a>Команда</a></li>
+                        <li><a>Блог</a></li>
+                        <li  class="highlighted-item"><a>Drabyna</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column">
+                    <ul>
+                    <li><a>Цікава інформація</a></li>
+                    <li><a>Вакансії</a></li>
+                    <li><a>Доставка та оплата</a></li>
+                    <li class="highlighted-item"><a>Етнодім Маніфест</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column hide-mobile">
+                    <ul>
+                        <li><p class="heading-underline">Контакти</p></li>
+                        <li>
+                            <address>
+                                <a class="phone-number" href="tel:+38(097)888-92-92">+38 097 888 92 92</a>
+                            </address>
+                        </li>
+                        <li>
+                            <address>
+                                <a class="adress" href="https://goo.gl/maps/eJjiy5NqSfSLEUzr9" target="_blank">Україна, м. Київ, вул. Верхній Вал 58/28</a>
+                            </address>
+                        </li>
+                    </ul>
+                    <div class="schedule"><p>пн-пт 10:00-20:00</p>
+                        <p>сб-нд 11:00-19:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="heading-underline">Соціальні мережі</p>
+                    <ul class="footer-icons">
+                        <li><a>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3333 2.75H3.66667C3.42355 2.75 3.19039 2.84658 3.01849 3.01849C2.84658 3.19039 2.75 3.42355 2.75 3.66667V18.3333C2.75 18.5764 2.84658 18.8096 3.01849 18.9815C3.19039 19.1534 3.42355 19.25 3.66667 19.25H11.5638V12.87H9.42058V10.3721H11.5638V8.53875C11.5638 6.4075 12.8654 5.24608 14.7721 5.24608C15.4128 5.24425 16.0545 5.27725 16.6925 5.34417V7.5625H15.3771C14.3431 7.5625 14.1414 8.05567 14.1414 8.77708V10.3675H16.6137L16.2928 12.8654H14.1405V19.25H18.3333C18.5764 19.25 18.8096 19.1534 18.9815 18.9815C19.1534 18.8096 19.25 18.5764 19.25 18.3333V3.66667C19.25 3.42355 19.1534 3.19039 18.9815 3.01849C18.8096 2.84658 18.5764 2.75 18.3333 2.75Z" fill="#DA1F39"/>
+                            </svg>
+                            </a>
+                        </li>
+                        <li><a>
+                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.601 6.91055C19.4907 6.51614 19.2804 6.15691 18.9905 5.86762C18.7006 5.57834 18.3409 5.36881 17.9463 5.25933C16.4649 4.8633 10.5095 4.8633 10.5095 4.8633C10.5095 4.8633 4.56551 4.8538 3.06867 5.25933C2.67466 5.36929 2.31567 5.57904 2.02642 5.8683C1.73716 6.15755 1.52741 6.51654 1.41745 6.91055C1.13613 8.42712 0.997578 9.96672 1.00361 11.5091C1.00086 13.0442 1.13939 14.5762 1.41745 16.0858C1.52777 16.48 1.73758 16.8392 2.02673 17.129C2.31589 17.4188 2.67468 17.6294 3.06867 17.7406C4.55008 18.1366 10.5095 18.1366 10.5095 18.1366C10.5095 18.1366 16.45 18.1366 17.9463 17.7406C18.3409 17.6299 18.7004 17.4195 18.9902 17.1297C19.28 16.8399 19.4904 16.4804 19.601 16.0858C19.8736 14.5771 20.0066 13.0428 19.9971 11.5091C20.0066 9.96539 19.8765 8.42877 19.601 6.91055ZM8.60717 14.3514V8.65439L13.5644 11.5091L8.60717 14.3514Z" fill="#DA1F39"/>
+                            </svg>
+                            </a>
+                        </li>
+                        <li><a>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.35693 7.95471L10.7279 12.3084C10.8119 12.352 10.9052 12.3748 10.9998 12.3748C11.0944 12.3748 11.1877 12.352 11.2716 12.3084L19.6426 7.9555V15.518C19.6427 16.1702 19.3931 16.7978 18.9452 17.2719C18.4972 17.746 17.8849 18.0307 17.2336 18.0676L17.0891 18.0716H4.91051C4.25825 18.0716 3.63071 17.8221 3.15661 17.3741C2.68251 16.9262 2.39779 16.3138 2.36086 15.6626L2.35693 15.518V7.95471ZM4.91051 3.92871H17.0891C17.7413 3.92867 18.3689 4.17822 18.843 4.62617C19.3171 5.07412 19.6018 5.68651 19.6387 6.33771L19.6426 6.48228V6.62685L10.9998 11.1211L2.35693 6.62685V6.48228C2.35689 5.83003 2.60644 5.20249 3.05439 4.72839C3.50234 4.25429 4.11473 3.96957 4.76593 3.93264L4.91051 3.92871H17.0891H4.91051Z" fill="#DA1F39"/>
+                            </svg>
+                            </a>
+                        </li>
+                        <li><a>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9999 2.35938C6.22806 2.35938 2.35986 6.22758 2.35986 10.9994C2.35986 15.7712 6.22806 19.6394 10.9999 19.6394C15.7717 19.6394 19.6399 15.7712 19.6399 10.9994C19.6399 6.22758 15.7717 2.35938 10.9999 2.35938ZM11.5912 13.0469C11.0368 13.0046 10.8046 12.7301 10.3708 12.4673C10.1323 13.7192 9.84066 14.9198 8.97666 15.5471C8.70936 13.6535 9.36726 12.2333 9.67326 10.724C9.15216 9.84648 9.73536 8.08157 10.8352 8.51537C12.1879 9.05177 9.66336 11.7779 11.3581 12.119C13.1275 12.4736 13.8502 9.04817 12.7531 7.93577C11.1673 6.32748 8.13876 7.89888 8.51136 10.2011C8.60136 10.7636 9.18366 10.9346 8.74356 11.7113C7.72926 11.4863 7.42596 10.6862 7.46556 9.61968C7.52766 7.87368 9.03426 6.65057 10.5445 6.48227C12.4552 6.26987 14.248 7.18337 14.4964 8.98157C14.7745 11.0102 13.6333 13.2053 11.5912 13.0469Z" fill="#DA1F39"/>
+                            </svg>
+                            </a>
+                        </li>
+                        <li><a>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2012 7.61276C19.192 6.91849 19.062 6.23113 18.8172 5.58142C18.6048 5.03339 18.2805 4.53569 17.8649 4.1201C17.4493 3.70451 16.9516 3.38019 16.4036 3.16784C15.7622 2.92708 15.0847 2.7969 14.3997 2.78284C13.5179 2.74342 13.2383 2.73242 10.9998 2.73242C8.76132 2.73242 8.4744 2.73242 7.59899 2.78284C6.91438 2.797 6.23714 2.92718 5.59607 3.16784C5.04796 3.38004 4.55017 3.70431 4.13457 4.11992C3.71896 4.53552 3.39469 5.03331 3.18249 5.58142C2.94125 6.22229 2.81135 6.89969 2.7984 7.58434C2.75899 8.46709 2.74707 8.74667 2.74707 10.9852C2.74707 13.2237 2.74707 13.5097 2.7984 14.386C2.81215 15.0717 2.9414 15.7482 3.18249 16.3908C3.39504 16.9387 3.71956 17.4363 4.1353 17.8517C4.55105 18.2671 5.04888 18.5913 5.59699 18.8034C6.2363 19.0539 6.91366 19.1934 7.5999 19.2159C8.48265 19.2553 8.76224 19.2673 11.0007 19.2673C13.2392 19.2673 13.5262 19.2673 14.4016 19.2159C15.0865 19.2024 15.7641 19.0726 16.4054 18.8318C16.9533 18.6192 17.4509 18.2948 17.8664 17.8793C18.282 17.4637 18.6064 16.9661 18.819 16.4183C19.0601 15.7766 19.1893 15.1001 19.2031 14.4135C19.2425 13.5317 19.2544 13.2521 19.2544 11.0127C19.2526 8.77417 19.2526 8.49001 19.2012 7.61276ZM10.9943 15.2183C8.65315 15.2183 6.75657 13.3218 6.75657 10.9806C6.75657 8.63942 8.65315 6.74284 10.9943 6.74284C12.1182 6.74284 13.1961 7.18931 13.9909 7.98405C14.7856 8.77878 15.2321 9.85667 15.2321 10.9806C15.2321 12.1045 14.7856 13.1824 13.9909 13.9771C13.1961 14.7719 12.1182 15.2183 10.9943 15.2183ZM15.4007 7.57425C15.2709 7.57438 15.1424 7.5489 15.0224 7.49928C14.9025 7.44966 14.7935 7.37688 14.7017 7.2851C14.6099 7.19331 14.5372 7.08433 14.4875 6.96439C14.4379 6.84444 14.4124 6.71589 14.4126 6.58609C14.4126 6.45638 14.4381 6.32794 14.4878 6.20811C14.5374 6.08827 14.6101 5.97939 14.7019 5.88767C14.7936 5.79596 14.9025 5.7232 15.0223 5.67357C15.1421 5.62393 15.2706 5.59838 15.4003 5.59838C15.53 5.59838 15.6584 5.62393 15.7783 5.67357C15.8981 5.7232 16.007 5.79596 16.0987 5.88767C16.1904 5.97939 16.2632 6.08827 16.3128 6.20811C16.3624 6.32794 16.388 6.45638 16.388 6.58609C16.388 7.13242 15.9462 7.57425 15.4007 7.57425Z" fill="#DA1F39"/>
+                            <path d="M10.9944 13.7335C12.5148 13.7335 13.7472 12.5011 13.7472 10.9808C13.7472 9.46048 12.5148 8.22803 10.9944 8.22803C9.47415 8.22803 8.2417 9.46048 8.2417 10.9808C8.2417 12.5011 9.47415 13.7335 10.9944 13.7335Z" fill="#DA1F39"/>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="hide-mobile">© «Етнодім» 2009-2021</p>
+                </div>
+                <div class="nav-column hide-desktop">
+                    <ul>
+                        <li><p class="heading-underline">Контакти</p></li>
+                        <li>
+                            <address>
+                                <a class="phone-number" href="tel:+38(097)888-92-92">+38 097 888 92 92</a>
+                            </address>
+                        </li>
+                        <li>
+                            <address>
+                                <a class="adress" href="https://goo.gl/maps/eJjiy5NqSfSLEUzr9" target="_blank">Україна, м. Київ, вул. Верхній Вал 58/28</a>
+                            </address>
+                        </li>
+                    </ul>
+                    <div class="schedule"><p>пн-пт 10:00-20:00</p>
+                        <p>сб-нд 11:00-19:00</p>
+                    </div>
+                    <p>© «Етнодім» 2009-2021</p>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>    
